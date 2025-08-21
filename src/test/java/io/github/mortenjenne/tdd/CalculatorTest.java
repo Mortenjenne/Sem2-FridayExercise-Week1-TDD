@@ -13,7 +13,7 @@ class CalculatorTest {
 
     @BeforeEach
     void setUp() {
-    }git
+    }
 
     @AfterEach
     void tearDown() {
@@ -25,7 +25,7 @@ class CalculatorTest {
         int expected = 4;
         int actual = calculator.add(2,2);
         assertEquals(expected,actual);
-    }git
+    }
 
     @DisplayName("Test subtract method")
     @Test
