@@ -24,6 +24,6 @@ class CalculatorTest {
     void testTwoPlusTwo(){
         int expected = 4;
         int actual = calculator.add(2,2);
-        assertEquals(2,2);
+        assertEquals(expected,actual);
     }
 }
