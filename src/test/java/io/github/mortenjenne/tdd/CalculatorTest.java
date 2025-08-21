@@ -56,4 +56,13 @@ class CalculatorTest {
     void testDivideByZero() {
         assertThrows(IllegalArgumentException.class, () -> calculator.divide(10, 0));
     }
+
+    @DisplayName("Test numbers can sum as Strings")
+    @Test
+    void testSumStrings(){
+        int expected = 6;
+        int actual = calculator.add("1,2,3");
+    }
+
+
 }
