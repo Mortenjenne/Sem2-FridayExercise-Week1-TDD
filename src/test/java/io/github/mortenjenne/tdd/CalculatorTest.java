@@ -42,4 +42,12 @@ class CalculatorTest {
         int actual = calculator.multiply(8,5);
         assertEquals(expected,actual);
     }
+
+    @DisplayName("Test divide method")
+    @Test
+    void testTenDividedWith2(){
+        int expected = 5;
+        int actual = calculator.divide(10,2);
+        assertEquals(expected,actual);
+    }
 }
