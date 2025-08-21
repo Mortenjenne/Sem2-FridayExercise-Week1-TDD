@@ -96,5 +96,13 @@ class CalculatorTest {
         assertEquals(expected, actual);
     }
 
+    @DisplayName("Test add method can an array of numbers")
+    @Test
+    void testAddWithArrayOfIntegers(){
+        int expected = 6;
+        int actual = calculator.add(new int[{1,2,3}]);
+        assertEquals(expected,actual);
+    }
+
 
 }
