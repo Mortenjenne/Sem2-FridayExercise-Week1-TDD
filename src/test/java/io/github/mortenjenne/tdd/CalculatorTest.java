@@ -64,5 +64,37 @@ class CalculatorTest {
         int actual = calculator.add("1,2,3");
     }
 
+    @DisplayName("Test null string returns zero")
+    @Test
+    void testNull(){
+        int expected = 0;
+        int actual = calculator.add(null);
+        assertEquals(expected,actual);
+    }
+
+    @DisplayName("Test null string returns zero")
+    @Test
+    void testEmptyString(){
+        int expected = 0;
+        int actual = calculator.add("");
+        assertEquals(expected,actual);
+    }
+
+    @DisplayName("Test string doesn't crash calculator")
+    @Test
+    void testCalculatorWithString(){
+        int expected = 3;
+        int actual = calculator.add("1,2,hello");
+        assertEquals(expected,actual);
+    }
+
+    @DisplayName("Test numbers with whitespace")
+    @Test
+    void testNumbersWithWhitespace(){
+        int expected = 6;
+        int actual = calculator.add(" 1 , 2 , 3 ");
+        assertEquals(expected, actual);
+    }
+
 
 }
