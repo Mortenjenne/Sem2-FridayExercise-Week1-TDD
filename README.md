@@ -31,7 +31,10 @@ nothing to commit, working tree clean
 **Commit Historie**
 
 ```
-4cda164 (HEAD -> main, origin/main) Update README.md
+76b933b (HEAD -> main, origin/main) Formatted git status and log with code blocks
+eb8402b Update README.md
+c07bc85 Updated README with git status and log
+4cda164 Update README.md
 218b931 (origin/feature-addIntArray, feature-addIntArray, developer) Overloaded add() with taking an int array as argument, all test passed
 0dce81d Added test for adding an a array of integers in add()
 4e206dc (origin/feature-AddString, feature-AddString) Overloaded add method with String as argument, all test passes
