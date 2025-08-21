@@ -13,17 +13,25 @@ class CalculatorTest {
 
     @BeforeEach
     void setUp() {
-    }
+    }git
 
     @AfterEach
     void tearDown() {
     }
 
-    @DisplayName("Test add method works")
+    @DisplayName("Test add method")
     @Test
     void testTwoPlusTwo(){
         int expected = 4;
         int actual = calculator.add(2,2);
+        assertEquals(expected,actual);
+    }git
+
+    @DisplayName("Test subtract method")
+    @Test
+    void testTenMinus5(){
+        int expected = 5;
+        int actual = calculator.subtract(10,5);
         assertEquals(expected,actual);
     }
 }
