@@ -29,9 +29,17 @@ class CalculatorTest {
 
     @DisplayName("Test subtract method")
     @Test
-    void testTenMinus5(){
+    void testTenMinusFive(){
         int expected = 5;
         int actual = calculator.subtract(10,5);
+        assertEquals(expected,actual);
+    }
+
+    @DisplayName("Test multiply method")
+    @Test
+    void testEightMultipliedWithFive(){
+        int expected = 40;
+        int actual = calculator.multiply(8,5);
         assertEquals(expected,actual);
     }
 }
