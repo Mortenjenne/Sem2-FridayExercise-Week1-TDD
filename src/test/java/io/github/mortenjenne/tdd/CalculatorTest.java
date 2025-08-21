@@ -68,7 +68,7 @@ class CalculatorTest {
     @Test
     void testNull(){
         int expected = 0;
-        int actual = calculator.add(null);
+        int actual = calculator.add((String)null);
         assertEquals(expected,actual);
     }
 
@@ -100,7 +100,23 @@ class CalculatorTest {
     @Test
     void testAddWithArrayOfIntegers(){
         int expected = 6;
-        int actual = calculator.add(new int[{1,2,3}]);
+        int actual = calculator.add(new int[]{1,2,3});
+        assertEquals(expected,actual);
+    }
+
+    @DisplayName("Testing adding a null int array")
+    @Test
+    void testAddIntArrayNull(){
+        int expected = 0;
+        int actual = calculator.add((int[])null);
+        assertEquals(expected,actual);
+    }
+
+    @DisplayName("Testing addding a empty int array")
+    @Test
+    void testAddEmptyIntArray(){
+        int expected = 0;
+        int actual = calculator.add(new int[]{});
         assertEquals(expected,actual);
     }
 

@@ -19,6 +19,13 @@ public class Calculator {
         return formatAndSumStrings(parts);
     }
 
+    public int add(int[] numbers){
+        if(numbers == null || numbers.length == 0){
+            return 0;
+        }
+        return sumArrayOfNumbers(numbers);
+    }
+
     public int subtract(int a, int b) {
         return a - b;
     }
@@ -46,6 +53,14 @@ public class Calculator {
                     System.out.println("Invalid number " + trimmed);
                 }
             }
+        }
+        return sum;
+    }
+
+    private int sumArrayOfNumbers(int[] numbers){
+        int sum = 0;
+        for(int numb: numbers){
+            sum += numb;
         }
         return sum;
     }
