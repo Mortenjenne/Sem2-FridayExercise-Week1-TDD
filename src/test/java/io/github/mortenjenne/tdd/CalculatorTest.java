@@ -50,4 +50,10 @@ class CalculatorTest {
         int actual = calculator.divide(10,2);
         assertEquals(expected,actual);
     }
+
+    @DisplayName("Test divide by zero throws exception")
+    @Test
+    void testDivideByZero() {
+        assertThrows(IllegalArgumentException.class, () -> calculator.divide(10, 0));
+    }
 }
