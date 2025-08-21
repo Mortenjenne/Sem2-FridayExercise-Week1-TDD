@@ -21,12 +21,16 @@ Testene er skrevet med JUnit og dækker alle metoder.
 
 **Current Status**
 
+```
 On branch main
 Your branch is up to date with 'origin/main'.
 nothing to commit, working tree clean
 
+```
+
 **Commit Historie**
 
+```
 4cda164 (HEAD -> main, origin/main) Update README.md
 218b931 (origin/feature-addIntArray, feature-addIntArray, developer) Overloaded add() with taking an int array as argument, all test passed
 0dce81d Added test for adding an a array of integers in add()
@@ -44,3 +48,6 @@ d41bcef Added test for subtract method
 162fea5 (origin/feature-add, feature-add) Fixed expected and actual i test
 402ae1a add method in Calculator completed and test passed
 09d572f Add test first test passed
+
+
+```
