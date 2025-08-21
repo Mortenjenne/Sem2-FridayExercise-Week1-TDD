@@ -20,11 +20,13 @@ Testene er skrevet med JUnit og dækker alle metoder.
 ## Git Status og Log
 
 **Current Status**
+
 On branch main
 Your branch is up to date with 'origin/main'.
 nothing to commit, working tree clean
 
 **Commit Historie**
+
 4cda164 (HEAD -> main, origin/main) Update README.md
 218b931 (origin/feature-addIntArray, feature-addIntArray, developer) Overloaded add() with taking an int array as argument, all test passed
 0dce81d Added test for adding an a array of integers in add()
