@@ -9,7 +9,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class CalculatorTest {
 
-    private Calculator calculator = new Calculator();
+    private final Calculator calculator = new Calculator();
 
     @BeforeEach
     void setUp() {
@@ -62,6 +62,7 @@ class CalculatorTest {
     void testSumStrings(){
         int expected = 6;
         int actual = calculator.add("1,2,3");
+        assertEquals(expected,actual);
     }
 
     @DisplayName("Test null string returns zero")
@@ -112,7 +113,7 @@ class CalculatorTest {
         assertEquals(expected,actual);
     }
 
-    @DisplayName("Testing addding a empty int array")
+    @DisplayName("Testing adding a empty int array")
     @Test
     void testAddEmptyIntArray(){
         int expected = 0;
